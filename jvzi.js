@@ -1,6 +1,13 @@
 let fenshu = document.getElementById('fenshu')
 let pipeizongjie = document.getElementById('pipeizongjie')
 let tuijian = document.getElementById('tuijian')
+document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                document.body.style.display = "block";
+            } else {
+                document.body.style.display = "none";
+            };
+        };
 
 let pipeiyu = localStorage.pipeidu + '分！'
 
