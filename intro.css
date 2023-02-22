@@ -22,4 +22,7 @@ body {
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-position: center 0;
+    background-image: url("img/intro.webp"),url("img/intro.png");
+    
+</style>
 }
