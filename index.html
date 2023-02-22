@@ -14,4 +14,29 @@
     </button>   
     </div>
 </body>
+<script>
+    var imgSrcArr = [
+        'image/intro.png',
+        'image/bg_body.jpg',
+        'image/final.jpg',
+        
+    ];
+
+    var imgWrap = [];
+
+    function preloadImg(arr) {
+        for(var i =0; i< arr.length ;i++) {
+            imgWrap[i] = new Image();
+            imgWrap[i].src = arr[i];
+        }
+    }
+
+    preloadImg(imgSrcArr);
+
+    //或者延迟的文档加载完毕在加载图片
+
+    $(function () {
+        preloadImg(imgSrcArr);
+    })
+<script/>
 </html>
